@@ -8,7 +8,7 @@ class Tabela {
     }
 
     usuario() {
-        const query = 'CREATE TABLE IF NOT EXISTS Usuarios(id int NOT NULL AUTO_INCREMENT, email CHAR(30) NOT NULL, senha CHAR(30) NOT NULL, dataCriacao DATETIME NOT NULL, PRIMARY KEY (id))'
+        const query = 'CREATE TABLE IF NOT EXISTS Usuarios(id int NOT NULL AUTO_INCREMENT, email CHAR(30) NOT NULL, senha CHAR(30) NOT NULL, PRIMARY KEY (id))'
 
         this.dbConnection.query(query, (err) => {
             if (err) {
